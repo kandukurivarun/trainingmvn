@@ -3,7 +3,9 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "doing installation"
+      - wget https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz
+      - tar -xvf Python-2.7.15.tgz
+      - mv Python-2.7.15 python
   build:
     commands:
       - mvn install
